@@ -1,0 +1,31 @@
+/*=== HELPERS / UTILIDADES ===*/
+
+/*Centrado de texto*/
+.text-center {
+    text-align: center !important;
+  }
+  
+  /* Ocultar elementos*/
+  .hidden {
+    display: none !important;
+  }
+  
+  /* Márgenes*/
+  .mt-1 { margin-top: 0.5rem !important; }
+  .mb-1 { margin-bottom: 0.5rem !important; }
+  .mt-2 { margin-top: 1rem !important; }
+  .mb-2 { margin-bottom: 1rem !important; }
+  
+  /* Padding */
+  .pt-1 { padding-top: 0.5rem !important; }
+  .pb-1 { padding-bottom: 0.5rem !important; }
+  .pt-2 { padding-top: 1rem !important; }
+  .pb-2 { padding-bottom: 1rem !important; }
+  
+  /*Flex*/
+  .flex-center {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+  }
+  

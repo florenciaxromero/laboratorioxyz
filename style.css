@@ -1,0 +1,381 @@
+/* Reseteo y estilos básicos */
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Wrapper principal */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.main-content {
+  flex: 1;
+}
+
+/* Estilos para el pie de página */
+footer {
+  background-color: #6C757D;
+  padding: 2rem 1rem;
+  text-align: center;
+  color: white;
+  font-family: "Helvetica Neue", sans-serif;
+  margin-top: auto;
+}
+
+footer .social-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+footer .icon-elem .icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  color: white;
+  transition: all 0.3s ease;
+  font-size: 1.8rem;
+}
+
+footer .icon-elem .icon:hover {
+  transform: translateY(-5px);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+footer .menu {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+footer .menu-elem .menu-icon {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+footer .menu-elem .menu-icon:hover {
+  text-decoration: underline;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.875rem;
+}
+
+/* Carrusel */
+.carousel-inner,
+.carousel-item,
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.container,
+.container-fluid,
+.row,
+.col,
+.card,
+.box {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+#carouselHeader .carousel-inner,
+#carouselHeader .carousel-item {
+  max-height: 400px;
+  overflow: hidden;
+}
+
+#carouselHeader .carousel-inner img,
+#carouselHeader .carousel-item img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+/* Caja de servicio */
+.cards-wrapper {
+  margin: 80px 160px;
+}
+
+@media (max-width: 768px) {
+  .cards-wrapper {
+    margin: 40px 20px;
+  }
+}
+
+.box {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.box .img {
+  position: relative;
+}
+
+.box .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.4s ease;
+}
+
+.box .img .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  border-radius: 12px;
+  transition: opacity 0.4s ease;
+}
+
+.box .img .overlay .text {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 0 1rem;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+.box .img:hover img {
+  transform: scale(1.05);
+}
+
+.box .img:hover .overlay {
+  opacity: 1;
+}
+
+.box .cta-container {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.box .cta-container .btn {
+  background-color: #007BFF;
+  border: none;
+  padding: 0.5rem 1.2rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.box .cta-container .btn:hover {
+  background-color: #0062cc;
+}
+
+/* Colores de las cajas */
+.box:nth-child(1) .overlay {
+  background-color: rgba(0, 123, 255, 0.4);
+}
+
+.box:nth-child(2) .overlay {
+  background-color: rgba(40, 167, 69, 0.4);
+}
+
+@media (max-width: 768px) {
+  .box {
+    margin-bottom: 2rem;
+  }
+
+  .box .text {
+    font-size: 1.2rem;
+  }
+}
+
+/* Animaciones */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Galería */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 2rem 0;
+  animation: fadeInUp 0.8s ease-out both;
+}
+
+.gallery .col {
+  opacity: 0;
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.gallery .col:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.gallery .col:nth-child(2) {
+  animation-delay: 0.3s;
+}
+
+.gallery-wrapper {
+  margin: 80px 160px;
+}
+
+@media (max-width: 768px) {
+  .gallery-wrapper {
+    margin: 40px 20px;
+  }
+}
+
+/* Contenedor 4 (Formulario) */
+.contenedor4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #e9f2fa;
+  padding: 1rem 2rem;
+  margin: 2rem auto;
+  width: 90%;
+  max-width: 1000px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+.contenedor4 h1 {
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+  color: #007BFF;
+  font-weight: 600;
+}
+
+.contenedor4 p {
+  font-size: 1rem;
+  margin: 0;
+  color: #333;
+}
+
+/* Estilos para los formularios */
+.form-container {
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 600px;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-container p {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.form-container .form-label {
+  font-weight: bold;
+  color: #555;
+}
+
+.form-container .form-control {
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.form-container .btn {
+  background-color: #007BFF;
+  border-radius: 8px;
+  padding: 0.75rem;
+  font-weight: 600;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.form-container .btn:hover {
+  background-color: #0062cc;
+}
+
+@media (max-width: 768px) {
+  .form-container {
+    width: 100%;
+    padding: 1rem;
+  }
+}
+
+/* ---------------------- */
+/* Servicios: Estilo responsivo y distribución */
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Dos columnas fijas */
+  gap: 2rem;
+  padding: 4rem 10vw;
+  animation: fadeInUp 0.8s ease-out both;
+}
+
+.service-box {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  min-height: 200px; /* Fijo alto para las cajas */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.service-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.service-box p {
+  font-weight: 600;
+  color: #007BFF;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.service-image {
+  width: 32px;
+  height: 32px;
+  margin-right: 1rem;
+  margin-top: 0.2rem;
+}
+
+@media (max-width: 768px) {
+  .service-grid {
+    grid-template-columns: 1fr; /* Una columna en dispositivos móviles */
+    padding: 2rem 1.5rem;
+  }
+
+  .service-box p {
+    font-size: 1rem;
+  }
+}

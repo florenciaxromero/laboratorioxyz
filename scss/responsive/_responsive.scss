@@ -1,0 +1,39 @@
+/* === ESTILOS RESPONSIVE ===*/
+
+@media (max-width: 768px) {
+    /* Galeria*/
+    .box {
+      margin-bottom: 2rem;
+    }
+  
+    .box .text {
+      font-size: 1.2rem;
+    }
+  
+    /* Cards (home)*/
+    .cards-wrapper {
+      margin: 40px 20px;
+    }
+  
+    /* Galeria wrapper*/
+    .gallery-wrapper {
+      margin: 40px 20px;
+    }
+  
+    /* Ajustes generales*/
+    .header,
+    .main,
+    .footer {
+      padding: 1.5rem;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+  
+      li {
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+  
