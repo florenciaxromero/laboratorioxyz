@@ -4,3 +4,4 @@ Se utilizo @media, bootstrap, flex y grid.
 Todo el sitio es responsive.
 Se utilizo SCSS, partials, mixing, anidacion y variables
 Se agrego SEO parcialmente personalizado (por falta de tiempo no llegue a trabajar a profundidad la personalizacion de SEO)
+Se creo una 2da branch para hacer commit prueba (los commit anteriores se trabajaron en otro repositorio)
