@@ -1,0 +1,18 @@
+# Node modules
+node_modules/
+
+# Archivos de compilación de SASS
+*.css.map
+*.scssc
+
+# Archivos temporales de editores
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Archivos de sistema operativo
+.DS_Store
+Thumbs.db
+
+# Archivos de OneDrive
+OneDrive/

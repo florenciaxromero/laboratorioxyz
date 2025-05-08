@@ -1,0 +1,64 @@
+footer {
+  background: linear-gradient(
+      rgba(108, 117, 125, 0.9),
+      rgba(108, 117, 125, 0.9)
+    ),
+    url('./Assets/img/footer-background.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 2rem 1rem;
+  text-align: center;
+  color: white;
+  font-family: "Helvetica Neue", sans-serif;
+  margin-top: auto;
+
+  .social-icon {
+    display: flex;
+    justify-content: center;
+    gap: 1rem; 
+    margin-bottom: 1rem;
+
+    .icon-elem {
+      .icon {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        color: white;
+        transition: all 0.3s ease;
+        font-size: 1.8rem;
+
+        &:hover {
+          transform: translateY(-5px);
+          background-color: rgba(255, 255, 255, 0.1);
+        }
+      }
+    }
+  }
+
+  .menu {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem; 
+    flex-wrap: wrap; 
+
+    .menu-elem {
+      .menu-icon {
+        color: white;
+        text-decoration: none;
+        font-weight: 500;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  p {
+    margin: 0;
+    font-size: 0.875rem;
+  }
+}

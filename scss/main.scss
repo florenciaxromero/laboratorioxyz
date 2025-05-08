@@ -1,0 +1,32 @@
+// ==== 1. ABSTRACTS ====
+@import 'abstracts/mixins';
+@import 'base/variables';
+
+// ==== 2. BASE ====
+@import 'base/reset';
+@import 'base/base'; 
+
+
+// ==== 3. EXTENDS ====
+@import 'extends'; 
+// ==== 4. LAYOUT ====
+@import 'layout/nav';
+@import 'layout/header';
+@import 'layout/footer';
+@import 'utils/containers';
+
+// ==== 5. COMPONENTS ====
+@import 'components/buttons';
+@import 'components/carousel';
+@import 'components/custom-overlays';
+@import 'components/components'; 
+
+// ==== 6. SECTIONS / PAGES ====
+@import 'sections/gallery';
+@import 'sections/services';
+
+ 
+
+// ==== 7. UTILS ====
+@import 'utils/animations';
+@import 'utils/helpers';
