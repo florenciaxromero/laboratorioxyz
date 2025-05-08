@@ -1,0 +1,32 @@
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @mixin section-padding {
+    padding: 2rem;
+  }
+  @mixin rounded-icon($bg-color, $text-color, $hover-bg, $size: 40px) {
+    display: inline-block;
+    width: $size;
+    height: $size;
+    line-height: $size;
+    background-color: $bg-color;
+    color: $text-color;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 24px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  
+    &:hover {
+      transform: translateY(-5px);
+      background-color: $hover-bg;
+    }
+  
+    ion-icon {
+      vertical-align: middle;
+      font-size: 24px;
+    }
+  }
+  
